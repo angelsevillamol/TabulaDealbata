@@ -1,0 +1,509 @@
+body {
+	height: 100vh;
+	margin: 0;
+	background-color: #fff;
+	font-family: "Georgia", serif;
+	font-size: 14px;
+	color: #4a5568;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+	margin-bottom: 2rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: #E1261C;
+	background-size: cover;
+	display: flex;
+}
+
+header div {
+	display: flex;
+	flex-basis: calc(100% / 3);
+}
+
+header ul, ol {
+	list-style:none;
+}
+
+header .nav > li {
+	float:left;
+	list-style:none;
+	margin-left: auto; 
+	padding: 30px 0;
+	margin-right: 4rem;
+}
+
+header .nav li a {
+	color:#000;
+	text-decoration:none;
+	padding:10px 2px;
+	display:block;
+	font-weight: 700;
+}
+
+header .nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+
+header .nav li:hover > ul {
+	display:block;
+}
+
+header .nav li ul li {
+	position:relative;
+	background-color:#fff;
+}
+
+header .nav li ul li a {
+	font-weight: 300;
+	position:relative;
+}
+
+header .nav li ul li a:hover {
+	position:relative;
+	background-color:#E6E6E6;
+}
+
+.logo {
+	padding: 30px 0;
+	align-self: center;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	justify-content: center;
+}
+
+.logo:hover{
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+  
+a:visited {
+	text-decoration: none;
+}
+  
+a:hover {
+	color: #E1261C;
+}
+  
+a:active {
+	color: #E1261C;
+}
+
+h1 {
+	color: #000;
+	font-size: 28px;
+    font-weight: 500;
+    margin-top: 0rem;
+	margin-bottom: 1.25rem;
+	margin-right: 0;
+	border-bottom: 1px solid #000;
+}
+
+h2 {
+	color: #000;
+	font-size: 20px;
+    font-weight: 500;
+    margin-top: 0rem;
+	margin-bottom: 1.25rem;
+	margin-right: 0;
+}
+
+h3 {
+	color: #4a5568;
+	font-size: 16px;
+	font-weight: 300;
+    margin-top: 1rem;
+	margin-right: 0;
+	margin-bottom: 0.5rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	padding-top: 2px;
+}
+
+.columnas {
+    width:80%; 
+    margin-left:auto;
+    margin-right:auto;
+    display: flex; 
+    flex-direction:row;
+    margin-bottom:5rem;
+    font-size:.875rem;
+    line-height:1.5;
+}
+
+.col-izquierda {
+    width:25%; 
+    margin-top:5rem;
+    margin-right:2rem;
+    padding-right:1.5rem;
+}
+
+.col-central {
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.columna {
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	margin-bottom:5rem;
+	flex-direction:row;
+	margin-left:auto;
+	margin-right:auto;
+	justify-content: center;
+}
+
+.caja-busqueda {
+	width: 100%;
+	margin-right: 0rem;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #f2f2f2;
+}
+
+.caja-busqueda form .barra-busqueda input {
+    width: 90%;
+    font-size: 14px;
+	border: 0;
+	border-bottom: 1px solid #999999;
+	background-color: #f2f2f2;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-left: 1.25rem;
+    font-family: "Georgia", serif;
+	color: #4a5568;
+	margin-bottom: 1rem;
+}
+
+.caja-busqueda form .barra-busqueda input:focus{
+    outline: none;
+}
+
+.caja {
+	width: 100%;
+	margin-right: 0rem;
+	padding: 1rem;
+	border: 1px solid #999999;
+	background-color: #fff;
+}
+
+.caja .nombre {
+	font-weight: 300;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.caja .descripcion {
+	font-weight: 300;
+}
+
+.caja .anuncio {
+	padding: 0.5rem;
+}
+
+.caja .anuncio .id {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.caja .anuncio .titulo {
+	padding-left: 0.65rem;
+	margin-bottom: 0.25rem;
+	font-weight: 700;
+	font-size: 1.125rem
+}
+
+.caja .anuncio .tipo {
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	padding-left: 1.25rem;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+.caja .anuncio .descripcion {
+	padding-left: 1.25rem;
+	font-weight: 300;
+}
+
+.caja .texto {
+	font-weight: 300;
+	display: flex;
+	padding: .5rem .5rem .5rem 0;
+	margin-bottom: -.25rem;
+}
+
+.caja form .contenedor-inputs input {
+    width: 80%;
+    font-size: 14px;
+	border: 0;
+    border-bottom: 1px solid #999999;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	padding-left: 1.25rem;
+    font-family: "Georgia", serif;
+    color: #4a5568;
+}
+
+.caja form .contenedor-inputs input:focus{
+    outline: none;
+}
+
+.btn {
+	width: 100%;
+	margin-top: .75rem;
+	background-color: #fff;
+	border: 1px solid #999999;
+	color: #4a5568;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 1rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #E1261C;
+	box-shadow: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+.form-btn-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-btn-inline .btn-il {
+    width: 40%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+	margin-top: .75rem;
+	background-color: #fff;
+	border: 1px solid #999999;
+	color: #4a5568;
+	text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1rem;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+    font-family: "Georgia", serif;
+}
+
+.form-btn-inline .btn-il:hover {
+	background-color: #E1261C;
+	box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.overlay {
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup {
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    transform: scale(0.7);
+    opacity: 0;
+    font-family: "Georgia", serif;
+}
+
+.popup.active {	
+    transform: scale(1); 
+    opacity: 1; 
+}
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+
+.popup .texto {
+    font-weight: 300;
+	font-size: 14px;
+	color: #4a5568;
+}
+
+.popup form .contenedor-inputs input {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #999999;
+    background-color: #E6E6E6;
+	padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-family: "Georgia", serif;
+    color: #4a5568;
+}
+
+.container {
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+  
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+  
+.checkmark {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 12px;
+	width: 12px;
+	background-color: #fff;
+	border: 1px solid #4a5568;
+}
+  
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+  
+.container .checkmark:after {
+	left: 3px;
+	top: 0px;
+	width: 3.5px;
+	height: 7px;
+	border: 1px solid #4a5568;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+  .caja-paginas {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	margin-right: 0rem;
+	margin-top: 2rem;
+	background-color: #fff;
+}
+
+.caja-paginas .boton {
+	text-decoration: none;
+  	display: inline-block;
+  	padding: 3px 10px;
+	width: 8px;
+	height: 24px;
+	background-color: #f1f1f1;
+	color: #4a5568;
+	font-size: 16px;
+	margin-right:4px;
+	margin-left:4px;
+}
+
+.caja-paginas .boton:hover {
+	background-color: #e1e1e1;
+	color: #4a5568;
+}
+
+.caja-paginas .boton-activo {
+	text-decoration: none;
+  	display: inline-block;
+  	padding: 3px 10px;
+	width: 8px;
+	height: 24px;
+	background-color: #d1d1d1;
+	color: #000;
+	font-size: 16px;
+	margin-right:4px;
+	margin-left:4px;
+}
+
+footer {
+	bottom: 0;
+	right: 0;
+	left:  0;
+	width: 100%;
+	height: 10vh;
+	margin-top: 2rem;
+	padding: 0;
+	background-color: #000;
+	background-size: cover;
+	color: #E6E6E6;
+	font-size: 16px;
+	padding: 50px 0;
+}
+
+footer .row {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+footer .linkstatic {
+	color:#E6E6E6;
+	margin-right: 10px;
+	margin-left: 10px;	
+}
