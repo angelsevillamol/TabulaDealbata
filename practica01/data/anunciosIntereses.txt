@@ -1,0 +1,3 @@
+3;5;0;null;false,false,false,true,false,false,false,false,false,false;half-life 3;es broma jaja salu2
+4;5;2;05/06/2020;false,false,false,false,false,false,false,false,false,true;polo flash;1 euro
+5;5;3;null;false,false,false,false,true,false,false,false,false,true;Lluvia de albondigas;Vive la fantastica pelicula con Flipi del hormiguero

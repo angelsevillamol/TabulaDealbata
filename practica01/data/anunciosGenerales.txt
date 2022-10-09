@@ -1,0 +1,4 @@
+0;5;0;null;pepe;pepe
+1;5;2;14/10/2020;paco;paco
+2;5;3;null;pedro;pedro
+6;5;2;16/10/2020;anuncio de hoy;hoy es 16 de octubre
